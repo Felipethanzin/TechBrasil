@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Entrar | TechBrasil</title>
+
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+  <main class="login-page">
+
+    <!-- LADO ESQUERDO -->
+    <section class="login-info">
+
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">T</div>
+
+        <div class="logo-name">
+          Tech<span>Brasil</span>
+        </div>
+      </a>
+
+      <div class="info-content">
+
+        <span class="badge">
+          <i></i>
+          REDE SOCIAL DE TECNOLOGIA
+        </span>
+
+        <h1>
+          Conecte-se ao
+          <strong>futuro.</strong>
+        </h1>
+
+        <p>
+          Compartilhe conhecimento, descubra novas ideias
+          e conecte-se com pessoas apaixonadas por tecnologia.
+        </p>
+
+        <div class="info-stats">
+          <div>
+            <strong>01</strong>
+            <span>Conecte</span>
+          </div>
+
+          <div>
+            <strong>02</strong>
+            <span>Compartilhe</span>
+          </div>
+
+          <div>
+            <strong>03</strong>
+            <span>Descubra</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tech-visual">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+
+        <div class="visual-card">
+
+          <div class="visual-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="code-line large"></div>
+          <div class="code-line"></div>
+          <div class="code-line short"></div>
+          <div class="code-line medium"></div>
+          <div class="code-line"></div>
+          <div class="code-line short"></div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- LOGIN -->
+    <section class="login-area">
+
+      <div class="login-box">
+
+        <div class="mobile-logo">
+          <div class="logo-icon">T</div>
+
+          <div class="logo-name">
+            Tech<span>Brasil</span>
+          </div>
+        </div>
+
+        <div class="login-title">
+          <span>SEJA BEM-VINDO</span>
+
+          <h2>Entrar na conta</h2>
+
+          <p>Acesse sua conta para continuar.</p>
+        </div>
+
+
+        <form>
+
+          <!-- E-MAIL -->
+          <div class="input-group">
+
+            <label for="email">E-mail</label>
+
+            <div class="input-box">
+              <span class="input-icon">@</span>
+
+              <input
+                type="email"
+                id="email"
+                placeholder="seu@email.com"
+                required
+              >
+            </div>
+
+          </div>
+
+
+          <!-- SENHA -->
+          <div class="input-group">
+
+            <div class="password-label">
+              <label for="senha">Senha</label>
+
+              <a href="recuperar-senha.html">
+                Esqueci minha senha
+              </a>
+            </div>
+
+            <div class="input-box">
+
+              <span class="input-icon">••</span>
+
+              <input
+                type="password"
+                id="senha"
+                placeholder="Digite sua senha"
+                required
+              >
+
+              <button
+                type="button"
+                class="show-password"
+                id="showPassword"
+                aria-label="Mostrar senha"
+              >
+                👁
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <!-- ENTRAR -->
+          <button type="submit" class="btn-login">
+            Entrar
+            <span>→</span>
+          </button>
+
+        </form>
+
+
+        <!-- SEPARADOR -->
+        <div class="divider">
+          <span>ou continue com</span>
+        </div>
+
+
+        <!-- LOGIN SOCIAL -->
+        <div class="social-login">
+
+          <button type="button" class="social-button google">
+            <span class="social-icon">G</span>
+            Google
+          </button>
+
+          <button type="button" class="social-button facebook">
+            <span class="social-icon">f</span>
+            Facebook
+          </button>
+
+        </div>
+
+
+        <!-- RODAPÉ -->
+        <div class="login-footer">
+          <span>TechBrasil</span>
+          <small>© 2026</small>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script>
+    const showPassword = document.getElementById("showPassword");
+    const passwordInput = document.getElementById("senha");
+
+    showPassword.addEventListener("click", () => {
+
+      const isPassword = passwordInput.type === "password";
+
+      passwordInput.type = isPassword ? "text" : "password";
+
+      showPassword.textContent = isPassword ? "🙈" : "👁";
+    });
+  </script>
+
+</body>
+
+</html>
+
