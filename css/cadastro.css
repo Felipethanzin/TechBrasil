@@ -1,0 +1,1741 @@
+
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+
+  --blue: #087cff;
+  --blue-light: #3da0ff;
+  --blue-dark: #0069dc;
+
+  --bg: #05080d;
+  --bg-soft: #080d15;
+  --card: #0a111a;
+
+  --border: #182536;
+  --border-light: #223449;
+
+  --text: #ffffff;
+  --text-soft: #9aa8ba;
+  --text-muted: #5d6b7d;
+
+}
+
+
+/* ==================================================
+   BODY
+================================================== */
+
+html {
+  width: 100%;
+  min-height: 100%;
+}
+
+
+body {
+
+  width: 100%;
+  min-height: 100vh;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: var(--bg);
+
+  color: var(--text);
+
+  -webkit-font-smoothing: antialiased;
+
+}
+
+
+/* ==================================================
+   PÁGINA
+================================================== */
+
+.auth-page {
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(420px, 1fr)
+    minmax(420px, 0.85fr);
+
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+
+  position: relative;
+
+  min-height: 100vh;
+
+  padding:
+    clamp(28px, 5vw, 60px)
+    clamp(30px, 7vw, 110px);
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 70% 45%,
+      rgba(8,124,255,.08),
+      transparent 32%
+    ),
+    var(--bg-soft);
+
+  border-right:
+    1px solid #142031;
+
+}
+
+
+/* GRID */
+
+.hero-grid {
+
+  position: absolute;
+
+  inset: 0;
+
+  opacity: .16;
+
+  background-image:
+    linear-gradient(
+      rgba(60,120,180,.15) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(60,120,180,.15) 1px,
+      transparent 1px
+    );
+
+  background-size: 45px 45px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black,
+      transparent 85%
+    );
+
+}
+
+
+/* GLOW */
+
+.hero-glow {
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -250px;
+  top: 25%;
+
+  border-radius: 50%;
+
+  background:
+    rgba(8,124,255,.08);
+
+  filter: blur(80px);
+
+}
+
+
+/* ==================================================
+   LOGO
+================================================== */
+
+.brand,
+.mobile-brand {
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  letter-spacing: -.5px;
+
+}
+
+
+.brand > span span,
+.mobile-brand > span span {
+
+  color: var(--blue);
+
+}
+
+
+.brand-icon {
+
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #168cff,
+      #0068d9
+    );
+
+  font-size: 22px;
+
+  font-weight: 900;
+
+  box-shadow:
+    0 0 35px
+    rgba(8,124,255,.25);
+
+}
+
+
+/* ==================================================
+   HERO CONTENT
+================================================== */
+
+.hero-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 600px;
+
+  margin-top:
+    clamp(100px, 18vh, 190px);
+
+}
+
+
+.status {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 25px;
+
+  color: #55aaff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+
+}
+
+
+.status i {
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--blue);
+
+  box-shadow:
+    0 0 12px
+    var(--blue);
+
+}
+
+
+.hero h1 {
+
+  max-width: 650px;
+
+  font-size:
+    clamp(48px, 5.4vw, 78px);
+
+  line-height: .98;
+
+  letter-spacing: -4px;
+
+}
+
+
+.hero h1 strong {
+
+  display: block;
+
+  color: var(--blue);
+
+}
+
+
+.hero-content > p {
+
+  max-width: 540px;
+
+  margin-top: 27px;
+
+  color: var(--text-soft);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+}
+
+
+/* ==================================================
+   ETAPAS
+================================================== */
+
+.steps {
+
+  display: flex;
+
+  align-items: center;
+
+  margin-top: 50px;
+
+}
+
+
+.step {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+}
+
+
+.step > span {
+
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+
+  place-items: center;
+
+  border:
+    1px solid
+    #1c3046;
+
+  border-radius: 9px;
+
+  background: #0b141f;
+
+  color: #52657b;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+}
+
+
+.step.active > span {
+
+  border-color:
+    rgba(8,124,255,.5);
+
+  background:
+    rgba(8,124,255,.12);
+
+  color: #55aaff;
+
+}
+
+
+.step strong {
+
+  display: block;
+
+  color: #c9d2df;
+
+  font-size: 11px;
+
+}
+
+
+.step small {
+
+  display: block;
+
+  margin-top: 3px;
+
+  color: #4f6074;
+
+  font-size: 9px;
+
+}
+
+
+.step-line {
+
+  width: 35px;
+
+  height: 1px;
+
+  margin: 0 12px;
+
+  background: #1c2938;
+
+}
+
+
+/* ==================================================
+   VISUAL
+================================================== */
+
+.visual {
+
+  position: absolute;
+
+  right: 8%;
+
+  bottom: 7%;
+
+  width: 330px;
+  height: 240px;
+
+}
+
+
+.orbit {
+
+  position: absolute;
+
+  border:
+    1px solid
+    rgba(26,84,133,.5);
+
+  border-radius: 50%;
+
+}
+
+
+.orbit-1 {
+
+  width: 320px;
+  height: 320px;
+
+  right: -50px;
+  bottom: -120px;
+
+}
+
+
+.orbit-2 {
+
+  width: 230px;
+  height: 230px;
+
+  right: 0;
+  bottom: -70px;
+
+}
+
+
+.orbit-3 {
+
+  width: 150px;
+  height: 150px;
+
+  right: 40px;
+  bottom: -30px;
+
+  border-color:
+    rgba(8,124,255,.25);
+
+}
+
+
+.visual-card {
+
+  position: absolute;
+
+  right: 0;
+  bottom: 25px;
+
+  width: 265px;
+  height: 165px;
+
+  padding: 19px;
+
+  border:
+    1px solid
+    #1c3147;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0d1824,
+      #09111a
+    );
+
+  transform:
+    rotate(-5deg);
+
+  box-shadow:
+    0 30px 70px
+    rgba(0,0,0,.4);
+
+}
+
+
+.window {
+
+  display: flex;
+
+  gap: 6px;
+
+  margin-bottom: 25px;
+
+}
+
+
+.window i {
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #344b63;
+
+}
+
+
+.visual-line {
+
+  width: 75%;
+  height: 5px;
+
+  margin-bottom: 11px;
+
+  border-radius: 10px;
+
+  background: #19334d;
+
+}
+
+
+.visual-line.big {
+
+  width: 52%;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--blue),
+      #18558d
+    );
+
+}
+
+
+.visual-line.medium {
+  width: 65%;
+}
+
+
+.visual-line.short {
+  width: 35%;
+}
+
+
+/* ==================================================
+   ÁREA DO FORMULÁRIO
+================================================== */
+
+.auth-area {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding:
+    clamp(25px, 5vw, 70px);
+
+  background: var(--bg);
+
+}
+
+
+.auth-container {
+
+  width: 100%;
+
+  max-width: 440px;
+
+}
+
+
+/* ==================================================
+   MOBILE BRAND
+================================================== */
+
+.mobile-brand {
+
+  display: none;
+
+  margin-bottom: 45px;
+
+}
+
+
+/* ==================================================
+   TELAS
+================================================== */
+
+.screen {
+
+  display: none;
+
+  animation:
+    screenIn .35s ease;
+
+}
+
+
+.screen.active {
+
+  display: block;
+
+}
+
+
+@keyframes screenIn {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(12px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+
+  }
+
+}
+
+
+/* ==================================================
+   CABEÇALHO
+================================================== */
+
+.heading {
+
+  margin-bottom: 32px;
+
+}
+
+
+.eyebrow {
+
+  color: var(--blue);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+}
+
+
+.heading h2 {
+
+  margin-top: 11px;
+
+  font-size:
+    clamp(29px, 3vw, 36px);
+
+  line-height: 1.1;
+
+  letter-spacing: -1.5px;
+
+}
+
+
+.heading p {
+
+  margin-top: 10px;
+
+  color: var(--text-muted);
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+}
+
+
+.heading p strong {
+
+  color: #d6deea;
+
+  font-weight: 600;
+
+}
+
+
+/* ==================================================
+   CAMPO
+================================================== */
+
+.field {
+
+  margin-bottom: 18px;
+
+}
+
+
+.field label {
+
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #aeb9c8;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+}
+
+
+/* ==================================================
+   INPUT
+================================================== */
+
+.input {
+
+  width: 100%;
+  height: 54px;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #0c131c,
+      #091018
+    );
+
+  transition:
+    border .2s,
+    box-shadow .2s,
+    background .2s;
+
+}
+
+
+.input:hover {
+
+  border-color:
+    #26384d;
+
+}
+
+
+.input:focus-within {
+
+  border-color:
+    var(--blue);
+
+  background: #0a121c;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(8,124,255,.08),
+    0 10px 30px
+    rgba(0,0,0,.12);
+
+}
+
+
+/* ÍCONE */
+
+.input-icon {
+
+  width: 51px;
+  min-width: 51px;
+
+  height: 100%;
+
+  display: grid;
+
+  place-items: center;
+
+  border-right:
+    1px solid
+    #172333;
+
+  color: #4f83b5;
+
+}
+
+
+.input-icon span {
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+}
+
+
+.input-icon svg {
+
+  width: 17px;
+  height: 17px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.7;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+}
+
+
+/* INPUT TEXT */
+
+.input input {
+
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+
+  padding:
+    0 14px;
+
+  outline: none;
+
+  border: none;
+
+  background: transparent;
+
+  color: #fff;
+
+  font-size: 13px;
+
+  font-family: inherit;
+
+}
+
+
+.input input::placeholder {
+
+  color: #475566;
+
+}
+
+
+.input input:focus {
+
+  outline: none;
+
+}
+
+
+/* ==================================================
+   CORREÇÃO DO AUTOFILL
+================================================== */
+
+.input input:-webkit-autofill,
+.input input:-webkit-autofill:hover,
+.input input:-webkit-autofill:focus,
+.input input:-webkit-autofill:active {
+
+  -webkit-text-fill-color: #ffffff !important;
+
+  caret-color: #ffffff;
+
+  -webkit-box-shadow:
+    0 0 0 1000px #0a121c inset !important;
+
+  box-shadow:
+    0 0 0 1000px #0a121c inset !important;
+
+  transition:
+    background-color 9999s ease-in-out 0s;
+
+}
+
+
+/* ==================================================
+   SENHA
+================================================== */
+
+.password-toggle {
+
+  width: 50px;
+  min-width: 50px;
+
+  height: 100%;
+
+  display: grid;
+
+  place-items: center;
+
+  border: none;
+
+  background: transparent;
+
+  color: #536579;
+
+  cursor: pointer;
+
+}
+
+
+.password-toggle:hover {
+
+  color: var(--blue);
+
+}
+
+
+.password-toggle svg {
+
+  width: 17px;
+  height: 17px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.7;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+}
+
+
+/* ==================================================
+   TERMOS
+================================================== */
+
+.terms {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin-top: 4px;
+
+  color: #566477;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+
+  cursor: pointer;
+
+}
+
+
+.terms input {
+
+  width: 14px;
+  height: 14px;
+
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  accent-color:
+    var(--blue);
+
+}
+
+
+.terms a {
+
+  color: #398edb;
+
+  text-decoration: none;
+
+}
+
+
+.terms a:hover {
+
+  color: #67b4ff;
+
+}
+
+
+/* ==================================================
+   BOTÃO PRINCIPAL
+================================================== */
+
+.primary-button {
+
+  width: 100%;
+  min-height: 54px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 23px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #168cff,
+      #006ce5
+    );
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 12px 30px
+    rgba(8,124,255,.16);
+
+  transition:
+    transform .2s,
+    box-shadow .2s,
+    filter .2s;
+
+}
+
+
+.primary-button:hover {
+
+  transform:
+    translateY(-2px);
+
+  filter:
+    brightness(1.08);
+
+  box-shadow:
+    0 17px 35px
+    rgba(8,124,255,.24);
+
+}
+
+
+.primary-button:active {
+
+  transform:
+    translateY(0);
+
+}
+
+
+.primary-button b {
+
+  font-size: 19px;
+
+  font-weight: 400;
+
+}
+
+
+/* ==================================================
+   RODAPÉ
+================================================== */
+
+.bottom-info {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 25px;
+
+  padding-top: 17px;
+
+  border-top:
+    1px solid
+    #141e2b;
+
+  color: #435165;
+
+  font-size: 9px;
+
+  letter-spacing: .3px;
+
+}
+
+
+.bottom-info span:last-child {
+
+  color: #31516e;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+}
+
+
+/* ==================================================
+   VERIFICAÇÃO
+================================================== */
+
+.verify-icon {
+
+  width: 64px;
+  height: 64px;
+
+  display: grid;
+
+  place-items: center;
+
+  margin-bottom: 22px;
+
+  border:
+    1px solid
+    rgba(8,124,255,.3);
+
+  border-radius: 16px;
+
+  background:
+    rgba(8,124,255,.07);
+
+  color: var(--blue);
+
+}
+
+
+.verify-icon svg {
+
+  width: 28px;
+  height: 28px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.5;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+}
+
+
+/* ==================================================
+   CÓDIGO
+================================================== */
+
+.code-inputs {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 9px;
+
+  margin-top: 28px;
+
+}
+
+
+.code {
+
+  width: 100%;
+  height: 58px;
+
+  outline: none;
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 10px;
+
+  background: #0a1119;
+
+  color: #fff;
+
+  text-align: center;
+
+  font-family: inherit;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  transition: .2s;
+
+}
+
+
+.code:focus {
+
+  border-color:
+    var(--blue);
+
+  background: #0c1621;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(8,124,255,.08);
+
+}
+
+
+/* ==================================================
+   REENVIAR
+================================================== */
+
+.resend {
+
+  margin-top: 20px;
+
+  color: #526174;
+
+  font-size: 11px;
+
+  text-align: center;
+
+}
+
+
+.resend button {
+
+  padding: 0;
+
+  border: none;
+
+  background: none;
+
+  color: var(--blue);
+
+  font: inherit;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+
+.resend button:hover {
+
+  color: #65b5ff;
+
+}
+
+
+/* VOLTAR */
+
+.back-button {
+
+  display: block;
+
+  margin:
+    20px auto 0;
+
+  border: none;
+
+  background: none;
+
+  color: #526174;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+}
+
+
+.back-button:hover {
+
+  color: #fff;
+
+}
+
+
+/* ==================================================
+   MENSAGEM
+================================================== */
+
+.message {
+
+  display: none;
+
+  margin-top: 15px;
+
+  padding: 12px 14px;
+
+  border-radius: 8px;
+
+  background: #0d151f;
+
+  font-size: 10px;
+
+  text-align: center;
+
+}
+
+
+.message.show {
+
+  display: block;
+
+}
+
+
+.message.error {
+
+  color: #ff7070;
+
+  border:
+    1px solid
+    rgba(255,80,80,.15);
+
+}
+
+
+.message.success {
+
+  color: #55d991;
+
+  border:
+    1px solid
+    rgba(80,220,140,.15);
+
+}
+
+
+/* ==================================================
+   SUCESSO
+================================================== */
+
+.success-screen {
+
+  text-align: left;
+
+}
+
+
+.success-icon {
+
+  width: 64px;
+  height: 64px;
+
+  display: grid;
+
+  place-items: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 16px;
+
+  background:
+    rgba(50,210,130,.08);
+
+  border:
+    1px solid
+    rgba(50,210,130,.25);
+
+  color: #4ed58d;
+
+  font-size: 27px;
+
+  font-weight: 700;
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1050px) {
+
+  .auth-page {
+
+    grid-template-columns:
+      minmax(350px, .8fr)
+      minmax(400px, 1fr);
+
+  }
+
+
+  .hero {
+
+    padding-left: 45px;
+    padding-right: 45px;
+
+  }
+
+
+  .hero h1 {
+
+    font-size: 55px;
+
+  }
+
+
+  .steps {
+
+    transform:
+      scale(.9);
+
+    transform-origin:
+      left center;
+
+  }
+
+
+  .visual {
+
+    right: 0;
+
+    transform:
+      scale(.8);
+
+    transform-origin:
+      right bottom;
+
+  }
+
+}
+
+
+/* ==================================================
+   MOBILE / TABLET PEQUENO
+================================================== */
+
+@media (max-width: 820px) {
+
+  .auth-page {
+
+    display: block;
+
+  }
+
+
+  .hero {
+
+    display: none;
+
+  }
+
+
+  .auth-area {
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding:
+      35px 24px;
+
+  }
+
+
+  .auth-container {
+
+    max-width: 460px;
+
+  }
+
+
+  .mobile-brand {
+
+    display: flex;
+
+    justify-content: center;
+
+  }
+
+}
+
+
+/* ==================================================
+   CELULAR
+================================================== */
+
+@media (max-width: 520px) {
+
+  .auth-area {
+
+    align-items: flex-start;
+
+    padding:
+      28px 18px 35px;
+
+  }
+
+
+  .auth-container {
+
+    max-width: 100%;
+
+  }
+
+
+  .mobile-brand {
+
+    margin-bottom: 38px;
+
+  }
+
+
+  .brand-icon {
+
+    width: 39px;
+    height: 39px;
+
+    border-radius: 10px;
+
+    font-size: 19px;
+
+  }
+
+
+  .mobile-brand {
+
+    font-size: 18px;
+
+  }
+
+
+  .heading {
+
+    margin-bottom: 26px;
+
+  }
+
+
+  .heading h2 {
+
+    font-size: 28px;
+
+  }
+
+
+  .heading p {
+
+    font-size: 12px;
+
+  }
+
+
+  .field {
+
+    margin-bottom: 15px;
+
+  }
+
+
+  .input {
+
+    height: 53px;
+
+  }
+
+
+  .primary-button {
+
+    min-height: 53px;
+
+  }
+
+
+  .code-inputs {
+
+    gap: 6px;
+
+  }
+
+
+  .code {
+
+    height: 52px;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+  }
+
+
+  .bottom-info {
+
+    margin-top: 22px;
+
+  }
+
+}
+
+
+/* ==================================================
+   CELULAR MUITO PEQUENO
+================================================== */
+
+@media (max-width: 360px) {
+
+  .auth-area {
+
+    padding-left: 14px;
+    padding-right: 14px;
+
+  }
+
+
+  .heading h2 {
+
+    font-size: 25px;
+
+  }
+
+
+  .input-icon {
+
+    width: 45px;
+    min-width: 45px;
+
+  }
+
+
+  .input input {
+
+    padding-left: 10px;
+    padding-right: 8px;
+
+    font-size: 12px;
+
+  }
+
+
+  .code-inputs {
+
+    gap: 4px;
+
+  }
+
+
+  .code {
+
+    height: 48px;
+
+    font-size: 16px;
+
+  }
+
+}
+
+
+/* ==================================================
+   REDUÇÃO DE MOVIMENTO
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+
+    animation-duration: .01ms !important;
+
+    transition-duration: .01ms !important;
+
+  }
+
+}
+
