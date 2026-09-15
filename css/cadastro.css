@@ -162,6 +162,44 @@ body {
 
 }
 
+.logo {
+  position: relative;
+  z-index: 5;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: #087cff;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.logo-name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.logo-name span {
+  color: #168cff;
+}
+
+
 
 /* ==================================================
    LOGO
