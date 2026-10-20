@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d19">
+    <meta name="description" content="TechBrasil: aprenda programação, compartilhe projetos, acompanhe desenvolvedores e evolua na tecnologia.">
+    <title>TechBrasil — Conectando desenvolvedores</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/index.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a class="brand" href="#inicio" aria-label="TechBrasil, página inicial">
+                <img src="img/logo.svg" alt="" width="42" height="42">
+                <span>Tech<span class="brand-highlight">Brasil</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Início</a>
+                <a href="#recursos">Recursos</a>
+                <a href="#aprender">Aprender</a>
+                <a href="#comunidade">Comunidade</a>
+                <a href="#suporte">Suporte</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a class="btn btn-outline btn-small" href="login/login.html">Entrar</a>
+                <a class="btn btn-primary btn-small" href="cadastro/cadastro.html">Criar conta</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero section" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow"><span class="status-dot"></span> SUA COMUNIDADE DE TECNOLOGIA</span>
+                    <h1>Seu próximo nível começa com <span>código.</span></h1>
+                    <p class="hero-description">
+                        Aprenda, publique projetos, compartilhe conhecimento e conecte-se com pessoas que também vivem tecnologia.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary btn-large" href="cadastro.html">Faça parte da comunidade <span aria-hidden="true">→</span></a>
+                        <a class="btn btn-outline btn-large" href="#recursos">Explorar plataforma</a>
+                    </div>
+
+                    <div class="hero-proof">
+                        <div class="avatar-stack" aria-hidden="true">
+                            <span>F</span>
+                            <span>D</span>
+                            <span>M</span>
+                            <span>+</span>
+                        </div>
+                        <p>Um espaço para quem está começando e para quem já desenvolve.</p>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="glow"></div>
+                    <article class="code-window">
+                        <div class="window-top">
+                            <div class="window-dots"><i></i><i></i><i></i></div>
+                            <span>hello-world.js</span>
+                            <span class="window-language">JAVASCRIPT</span>
+                        </div>
+                        <div class="code-content">
+                            <p><span class="code-muted">01</span> <span class="code-purple">const</span> dev = {</p>
+                            <p><span class="code-muted">02</span> &nbsp; nome: <span class="code-green">"Você"</span>,</p>
+                            <p><span class="code-muted">03</span> &nbsp; foco: <span class="code-green">"Evoluir"</span>,</p>
+                            <p><span class="code-muted">04</span> &nbsp; limite: <span class="code-orange">null</span></p>
+                            <p><span class="code-muted">05</span> };</p>
+                            <p class="code-space"><span class="code-muted">06</span></p>
+                            <p><span class="code-muted">07</span> <span class="code-purple">function</span> <span class="code-blue">evoluir</span>() {</p>
+                            <p><span class="code-muted">08</span> &nbsp; <span class="code-purple">return</span> <span class="code-green">"Continue criando!"</span>;</p>
+                            <p><span class="code-muted">09</span> }</p>
+                        </div>
+                        <div class="code-footer"><span class="status-dot"></span> Tudo pronto para construir</div>
+                    </article>
+
+                    <div class="floating-card floating-card-top">
+                        <span class="floating-icon"><span aria-hidden="true">⌘</span></span>
+                        <div><strong>Crie projetos</strong><small>Mostre seu trabalho</small></div>
+                    </div>
+                    <div class="floating-card floating-card-bottom">
+                        <span class="floating-icon purple-icon"><span aria-hidden="true">✦</span></span>
+                        <div><strong>Aprenda sempre</strong><small>Um passo de cada vez</small></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats section-compact">
+            <div class="container stats-grid">
+                <div><strong>01</strong><span>Aprender algo novo</span></div>
+                <div><strong>02</strong><span>Compartilhar projetos</span></div>
+                <div><strong>03</strong><span>Conhecer desenvolvedores</span></div>
+                <div><strong>04</strong><span>Evoluir em comunidade</span></div>
+            </div>
+        </section>
+
+        <section class="section" id="recursos">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">FEITA PARA QUEM CRIA</span>
+                    <h2>Mais que uma rede social.<br><span>Um lugar para evoluir.</span></h2>
+                    <p>Ferramentas e conteúdos para acompanhar sua jornada na tecnologia.</p>
+                </div>
+
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon blue-icon"><span aria-hidden="true">◈</span></div>
+                        <h3>Feed de tecnologia</h3>
+                        <p>Compartilhe ideias, novidades, dicas e experiências com a comunidade.</p>
+                        <a href="cadastro.html">Conhecer comunidade <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon purple-icon"><span aria-hidden="true">⌘</span></div>
+                        <h3>Portfólio de projetos</h3>
+                        <p>Apresente seus trabalhos, mostre sua evolução e receba sugestões.</p>
+                        <a href="cadastro.html">Apresentar projetos <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon cyan-icon"><span aria-hidden="true">▷</span></div>
+                        <h3>Vídeos e tutoriais</h3>
+                        <p>Descubra conteúdos práticos para aprender no seu ritmo.</p>
+                        <a href="#aprender">Explorar conteúdos <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon green-icon"><span aria-hidden="true">⌘</span></div>
+                        <h3>Trilhas de aprendizagem</h3>
+                        <p>Organize seus estudos por tecnologia e desenvolva novas habilidades.</p>
+                        <a href="#aprender">Começar a aprender <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon orange-icon"><span aria-hidden="true">?</span></div>
+                        <h3>Dúvidas e respostas</h3>
+                        <p>Compartilhe problemas de código e aprenda com outras pessoas.</p>
+                        <a href="#suporte">Ver suporte <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon pink-icon"><span aria-hidden="true">◎</span></div>
+                        <h3>Networking</h3>
+                        <p>Conheça desenvolvedores, encontre colaboradores e troque experiências.</p>
+                        <a href="cadastro.html">Conectar-se <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section learning-section" id="aprender">
+            <div class="container">
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <span class="eyebrow">CONHECIMENTO NA PRÁTICA</span>
+                        <h2>Comece a construir <span>hoje.</span></h2>
+                        <p>Explore algumas das áreas mais populares do desenvolvimento.</p>
+                    </div>
+                    <a class="text-link" href="cadastro.html">Ver oportunidades <span aria-hidden="true">→</span></a>
+                </div>
+
+                <div class="learning-grid">
+                    <article class="learning-card learning-html">
+                        <div class="learning-card-top"><span class="course-tag">DESENVOLVIMENTO WEB</span><span class="course-symbol">5</span></div>
+                        <h3>HTML &amp; CSS</h3>
+                        <p>Crie páginas modernas, responsivas e com identidade própria.</p>
+                        <div class="course-meta"><span>Fundamentos</span><span>Trilha de estudos</span></div>
+                        <a href="cadastro.html" aria-label="Explorar HTML e CSS">Explorar trilha <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="learning-card learning-js">
+                        <div class="learning-card-top"><span class="course-tag">PROGRAMAÇÃO</span><span class="course-symbol">JS</span></div>
+                        <h3>JavaScript</h3>
+                        <p>Adicione interatividade e transforme ideias em experiências dinâmicas.</p>
+                        <div class="course-meta"><span>Lógica e prática</span><span>Trilha de estudos</span></div>
+                        <a href="cadastro.html" aria-label="Explorar JavaScript">Explorar trilha <span aria-hidden="true">↗</span></a>
+                    </article>
+
+                    <article class="learning-card learning-python">
+                        <div class="learning-card-top"><span class="course-tag">TECNOLOGIA</span><span class="course-symbol">Py</span></div>
+                        <h3>Python</h3>
+                        <p>Aprenda lógica, automação e os fundamentos de uma linguagem versátil.</p>
+                        <div class="course-meta"><span>Do zero</span><span>Trilha de estudos</span></div>
+                        <a href="cadastro.html" aria-label="Explorar Python">Explorar trilha <span aria-hidden="true">↗</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="comunidade">
+            <div class="container community-panel">
+                <div class="community-content">
+                    <span class="eyebrow">VOCÊ NÃO PRECISA APRENDER SOZINHO</span>
+                    <h2>Compartilhe o que sabe.<br><span>Descubra o que ainda pode aprender.</span></h2>
+                    <p>Publique suas conquistas, mostre seus projetos, participe das conversas e ajude a comunidade a crescer.</p>
+                    <a class="btn btn-primary btn-large" href="cadastro.html">Quero fazer parte <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="community-art" aria-hidden="true">
+                    <div class="community-orbit orbit-one"></div>
+                    <div class="community-orbit orbit-two"></div>
+                    <div class="community-center"><img src="img/logo.svg" alt="" width="82" height="82"></div>
+                    <span class="orbit-bubble bubble-one">&lt;/&gt;</span>
+                    <span class="orbit-bubble bubble-two">{ }</span>
+                    <span class="orbit-bubble bubble-three">JS</span>
+                    <span class="orbit-bubble bubble-four">Py</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section support-section" id="suporte">
+            <div class="container support-grid">
+                <div class="support-intro">
+                    <span class="eyebrow">ESTAMOS AQUI PARA AJUDAR</span>
+                    <h2>Dúvidas? Vamos <span>resolver.</span></h2>
+                    <p>Confira as respostas mais comuns sobre a proposta da plataforma.</p>
+                    <a class="btn btn-outline" href="login.html">Acessar minha conta</a>
+                    <p class="small-note">Precisa de ajuda com o acesso? Entre na página de login para conferir as opções disponíveis.</p>
+                </div>
+
+                <div class="faq-list">
+                    <details>
+                        <summary>O que é o TechBrasil?<span aria-hidden="true">+</span></summary>
+                        <p>É uma proposta de rede social para desenvolvedores compartilharem projetos, conhecimentos, conteúdos e experiências de tecnologia.</p>
+                    </details>
+                    <details>
+                        <summary>Preciso saber programar para participar?<span aria-hidden="true">+</span></summary>
+                        <p>Não. A ideia é acolher iniciantes, estudantes, profissionais e pessoas curiosas sobre tecnologia.</p>
+                    </details>
+                    <details>
+                        <summary>Posso publicar meus projetos?<span aria-hidden="true">+</span></summary>
+                        <p>Sim. A plataforma foi planejada para dar espaço à apresentação de projetos, dicas, tutoriais e experiências.</p>
+                    </details>
+                    <details>
+                        <summary>O login já funciona?<span aria-hidden="true">+</span></summary>
+                        <p>A página de login está preparada para se conectar à API. A autenticação real depende de implementar e configurar o backend.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section signup-section" id="cadastro">
+            <div class="container signup-panel">
+                <img src="img/logo.svg" alt="" width="56" height="56">
+                <span class="eyebrow">SUA JORNADA COMEÇA AQUI</span>
+                <h2>Transforme curiosidade em <span>criação.</span></h2>
+                <p>Entre para uma comunidade que valoriza aprendizado, colaboração e boas ideias.</p>
+                <a class="btn btn-primary btn-large" href="cadastro.html">Criar minha conta <span aria-hidden="true">→</span></a>
+                <p class="signup-disclaimer">Já possui uma conta? <a href="login/login.html">Entrar na plataforma</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-main">
+            <div class="footer-brand">
+                <a class="brand" href="#inicio">
+                    <img src="img/logo.svg" alt="" width="38" height="38">
+                    <span>Tech<span class="brand-highlight">Brasil</span></span>
+                </a>
+                <p>Conectando pessoas, ideias e tecnologia.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Plataforma</h3>
+                <a href="#recursos">Recursos</a>
+                <a href="#aprender">Aprender</a>
+                <a href="#comunidade">Comunidade</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Informações</h3>
+                <a href="#suporte">Suporte</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="#inicio">Sobre o projeto</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Sua conta</h3>
+                <a href="login/login.html">Entrar</a>
+                <a href="cadastro/cadastro.html">Criar conta</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© <span id="currentYear">2026</span> TechBrasil. Todos os direitos reservados.</span>
+            <span>Feito para quem constrói o futuro.</span>
+        </div>
+    </footer>
+</body>
+</html>
